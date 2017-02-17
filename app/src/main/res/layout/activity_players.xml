@@ -24,8 +24,26 @@
     <include layout="@layout/content_players"
         android:id="@+id/include" />
 
-    <GridView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridView"
+        android:numColumns="3"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:id="@+id/grid_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:layout_marginTop="5px"
+        android:textSize="15px"
+        android:textColor="#000000"
+        >
+    </TextView>
 
 </android.support.design.widget.CoordinatorLayout>
