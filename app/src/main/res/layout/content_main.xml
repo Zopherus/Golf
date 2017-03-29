@@ -23,5 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:autoText="false" />
+        android:autoText="false"
+        android:onClick="sendMessage (MainActivity)"
+        tools:text="@string/button_send" />
 </RelativeLayout>
